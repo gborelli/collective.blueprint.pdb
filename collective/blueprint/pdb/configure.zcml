@@ -1,0 +1,13 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:transmogrifier="http://namespaces.plone.org/transmogrifier"
+    i18n_domain="collective.blueprint.pdb">
+
+    <include package="collective.transmogrifier" file="meta.zcml"/> 
+    <include package="collective.transmogrifier"/>
+
+    <utility component="collective.blueprint.pdb.PdbSection"
+             name="collective.blueprint.pdb" />
+
+</configure>
